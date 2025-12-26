@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craftigo | Créations Sur Mesure</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav-logo" aria-label="Craftigo Accueil">Craftigo</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                    <li><a href="#comment-ca-marche" class="nav-link">Comment ça marche ?</a></li>
+                    <li><a href="#tarifs" class="nav-link">Tarifs</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#a-propos" class="nav-link">À propos</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="nav-close" id="nav-close" aria-label="Fermer le menu">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div class="nav-actions">
+                <button id="btn-nav-order" class="btn btn-primary nav-btn">Commander</button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home section" id="accueil">
+            <div class="home-container container grid">
+                <div class="home-data">
+                    <h1 class="home-title">Donnez vie à vos idées avec <span class="highlight">Craftigo</span></h1>
+                    <p class="home-description">
+                        Créations personnalisées, uniques et rapides. Transformez vos concepts en réalités visuelles pour seulement 15€.
+                    </p>
+                    <div class="home-buttons">
+                        <button id="btn-hero-order" class="btn btn-primary btn-lg">Commander maintenant</button>
+                        <a href="#portfolio" class="btn btn-secondary btn-lg">Voir le portfolio</a>
+                    </div>
+                </div>
+                <div class="home-img">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=800" alt="Artisanat Craftigo">
+                </div>
+            </div>
+        </section>
+
+        <section class="features section">
+            <div class="container grid features-grid">
+                <div class="feature-card">
+                    <i data-lucide="palette" class="feature-icon"></i>
+                    <h3 class="feature-title">Sur Mesure</h3>
+                    <p>Chaque création est 100% personnalisée selon vos envies.</p>
+                </div>
+                <div class="feature-card">
+                    <i data-lucide="tag" class="feature-icon"></i>
+                    <h3 class="feature-title">Prix Fixe</h3>
+                    <p>Un tarif unique de 15€ sans aucun frais caché.</p>
+                </div>
+                <div class="feature-card">
+                    <i data-lucide="zap" class="feature-icon"></i>
+                    <h3 class="feature-title">Livraison Express</h3>
+                    <p>Vos projets réalisés et livrés en un temps record.</p>
+                </div>
+                <div class="feature-card">
+                    <i data-lucide="shield-check" class="feature-icon"></i>
+                    <h3 class="feature-title">Support 24/7</h3>
+                    <p>Une assistance dédiée pour toutes vos questions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="steps section section-bg" id="comment-ca-marche">
+            <div class="container">
+                <h2 class="section-title">Comment ça marche ?</h2>
+                <div class="steps-grid grid">
+                    <div class="step-card">
+                        <span class="step-number">01</span>
+                        <h3 class="step-title">L'Idée</h3>
+                        <p>Imaginez votre projet ou trouvez une inspiration.</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-number">02</span>
+                        <h3 class="step-title">La Demande</h3>
+                        <p>Préparez vos détails et références visuelles.</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-number">03</span>
+                        <h3 class="step-title">Le Mail</h3>
+                        <p>Envoyez votre demande via notre bouton de commande.</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-number">04</span>
+                        <h3 class="step-title">La Création</h3>
+                        <p>Nous réalisons votre projet avec soin.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing section" id="tarifs">
+            <div class="container">
+                <h2 class="section-title">Tarif Unique</h2>
+                <div class="pricing-container grid">
+                    <div class="pricing-card">
+                        <header class="pricing-header">
+                            <span class="pricing-price">15€</span>
+                            <p>Par création</p>
+                        </header>
+                        <ul class="pricing-list">
+                            <li><i data-lucide="check"></i> Design personnalisé</li>
+                            <li><i data-lucide="check"></i> Révisions incluses</li>
+                            <li><i data-lucide="check"></i> Support prioritaire</li>
+                            <li><i data-lucide="check"></i> Livraison haute qualité</li>
+                        </ul>
+                        <button id="btn-price-order" class="btn btn-primary btn-full">Commander maintenant</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio section section-bg" id="portfolio">
+            <div class="container">
+                <h2 class="section-title">Portfolio de Miniatures</h2>
+                <div class="portfolio-grid grid">
+                    <div class="portfolio-item">
+                        <img src="https://th.bing.com/th/id/OIP.p7MK2_K-DToRFv6e9BRgxAHaEK?w=287&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Miniature Gaming 1">
+                        <div class="portfolio-info">
+                            <h3>Gaming Pro</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://th.bing.com/th/id/OIP.t4iLKiJ90rnXunnCXhQ2rwHaEK?w=309&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Miniature Gaming 2">
+                        <div class="portfolio-info">
+                            <h3>Thumbnail Dynamique</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://th.bing.com/th/id/OIP.130qFbtwUA4SP6VeH7UvkgHaEK?w=312&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Miniature Gaming 3">
+                        <div class="portfolio-info">
+                            <h3>Design Impactant</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://th.bing.com/th/id/OIP.1mVjYFbvaNp-JGTgksTIzAHaEK?w=322&h=181&c=7&r=0&o=7&pid=1.7&rm=3" alt="Miniature Gaming 4">
+                        <div class="portfolio-info">
+                            <h3>Gaming Elite</h3>
+                        </div>
+                    </div>
+                </div>
+                <p class="portfolio-footer">Exemples de designs réalisés pour nos clients.</p>
+            </div>
+        </section>
+
+        <section class="order section" id="commander">
+            <div class="container">
+                <div class="order-box grid">
+                    <div class="order-content">
+                        <h2 class="section-title text-left">Prêt à commander ?</h2>
+                        <p class="order-text">
+                            "Cliquez sur le bouton ci-dessous pour ouvrir Gmail et nous envoyer votre demande. Le message est déjà préparé pour vous !<br>Après votre paiement, toute demande de miniature est automatiquement préparée et envoyée via Gmail afin que nous puissions traiter votre projet rapidement et efficacement.git commit -m "Premier commit : projet Craftigo"
+                        </p>
+                        <div class="order-alert">
+                            <i data-lucide="info"></i>
+                            <span>Redirection vers antoine.forterax@gmail.com</span>
+                        </div>
+                        <button id="btn-direct-order" class="btn btn-primary btn-lg">Commander via Gmail<br>  ⚠️ En cas de problème, connectez-vous à votre Gmail et envoyez votre demande à  
+    <strong>antoine.forterax@gmail.com</strong></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="a-propos">
+            <div class="container grid about-grid">
+                <div class="about-data">
+                    <h2 class="section-title text-left">À propos</h2>
+                    <p>Craftigo simplifie l'accès au design de qualité. Notre mission est de permettre à chacun de concrétiser ses idées sans barrière technique ou financière.</p>
+                </div>
+                <div class="about-team">
+                    <h3 class="about-subtitle">L'Équipe</h3>
+                    <div class="team-member">
+                        <div class="team-img-placeholder"></div>
+                        <h4>Antoine</h4>
+                        <p>Designer & Fondateur</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section section-bg" id="contact">
+            <div class="container">
+                <div class="contact-card">
+                    <h2 class="section-title">Contactez-nous</h2>
+                    <p>Une question particulière ? On vous répond rapidement.</p>
+                    <div class="contact-email">antoine.forterax@gmail.com</div>
+                    <button id="btn-contact" class="btn btn-secondary btn-lg">Envoyer un message</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container grid footer-grid">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">Craftigo</a>
+                <p class="footer-description">Votre partenaire créatif au quotidien.</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                <a href="#" class="social-link" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                <a href="#" class="social-link" aria-label="Message"><i data-lucide="message-circle"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2025 Craftigo. Tous droits réservés.</p>
+            <button id="btn-support" class="footer-link">Besoin d'aide ?</button>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up" aria-label="Retour en haut">
+        <i data-lucide="arrow-up"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
